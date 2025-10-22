@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<dyad>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerador de Imagens Motivacionais com IA - Crie imagens inspiradoras em segundos">
+    <meta name="theme-color" content="#667eea">
+    <title>Gerador de Imagens Motivacionais 🎬</title>
+    <link rel="stylesheet" href="style.css">
+</whead>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Gerador de Imagens Motivacionais:/h1>
+            <p>Crie imagens inspiradoras com IA em segundos</p>
+        </header>
+
+        <main>
+            <div class="form-section">
+                <div class="input-group">
+                    <label for="theme">Tema/Categoria:</label>
+                    <select id="theme">
+                        <option value="">Selecione um tema...</option>
+                        <option value="motivação">ЩȂ Motivação</option>
+                        <option value="sucesso">🎮 Sucesso</option>
+                        <option value="criatividade">🎯 Criatividade</option>
+                        <option value="perseverça">🐖 Perseverça</option>
+                        <option value="love">✅ Amor e Relacionamentos</option>
+                        <option value="amizade">🎵 Amizade</option>
+                        <option value="trabalho">🌨 Trabalho/Carreira</option>
+                        <option value="saúde">🎋 Saúde e Bem-estar</option>
+                        <option value="aprendizado">📻 Aprendizado</option>
+                        <option value="humoreado">🌒 Engraçado/Humor</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="quote">Citação/Texto (opcional):</label>
+                    <textarea id="quote" placeholder="Digite uma frase motivacional... ou deixe a IA criar uma!" rows="3"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="style">Estilo Visual:</label>
+                    <select id="style">
+                        <option value="moderno">🌒 Moderno e Minimalista</option>
+                        <option value="artístico">🌖 Artístico e Criativo</option>
+                        <option value="natureza">🏻 Natureza e Tranquilidade</option>
+                        <option value="urbano">🌇 Urbano e DÑnamico</option>
+                        <option value="celestial">🍣 Celestial e Místico</option>
+                    </select>
+                </div>
+
+                <button id="generateBtn" class="btn-primary">
+                    <span class="btn-text">✅ Gerar Imagem com IA</span>
+                    <span class="btn-loader" style="display:none;">☿ Gerando...</span>
+                </button>
+            </div>
+
+            <div class="preview-section">
+                <h2>Pré-visualização:</h2>
+                <div id="imageContainer" class="image-container">
+                    <div class="placeholder">
+                        <p>✅ Sua imagem aparecerâ aqui</p>
+                        <p class="subtitle">Escolja um tema e clique em "Gerar Imagem"</p>
+                    </div>
+                </div>
+                <div class="actions" style="display:none;" id="actionsDiv">
+                    <button id="downloadBtn" class="btn-secondary">ℾ Download</button>
+                    <button id="shareBtn" class="btn-secondaryB>🌄 Copiar Link</button>
+                    <button id="regenerateBtn" class="btn-secondary">�B dxerar Outra</button>
+                </div>
+                <div id="quoteText" class="quote-display" style="display:none;"></div>
+            </div>
+
+            <div id="errorDiv" class="error-message" style="display:none;"></div>
+            <div id="loadingDiv" class="loading" style="display:none;">
+                <div class="spinner"></div>
+                <p>Criando sua imagem com Gemini AI...</p>
+                <p class="loading-sub">(Isso pode levar 5-15 segundos)</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>🍣 Powered by Gemini AI | <a href="https://github.com" target="_blank">🔆 GitHub</a> | Criado com ❤«🎻</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
